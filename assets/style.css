@@ -152,7 +152,6 @@ nav a, .nav a {
 	font-family: Spectral;
 	font-style: italic;
 	font-weight: 300;
-	font-size: 2.5rem;
 	margin-top: 0;
 	margin-bottom: 0.5rem;
 	line-height: 1.2;
@@ -204,7 +203,6 @@ nav a, .nav a {
 }
 
 .service__price p {
-	font-size: 1.5rem;
 	margin-top: 0;
 	margin-bottom: 0.5rem;
 	line-height: 1.2;
@@ -236,7 +234,6 @@ nav a, .nav a {
 }
 
 .form-container__question {
-	font-size: 1.75rem;
 	margin-top: 0;
 	margin-bottom: 0.5rem;
 	font-weight: 500;
@@ -277,6 +274,30 @@ input[type="submit"] {
 	padding: .5em 1em
 }
 
+@media all and (min-width: 1200px) {
+	.quote__text {
+		font-size: 2.5rem;
+	}
+	.service__price p {
+		font-size: 1.5rem;
+	}
+	.form-container__question {
+		font-size: 1.75rem;
+	}
+}
+
+@media all and (max-width: 1200px) {
+	.quote__text {
+		font-size: calc(1.375rem + 1.5vw);
+	}
+	.service__price p {
+		font-size: calc(1.275rem + 0.3vw);
+	}
+	.form-container__question {
+		font-size: calc(1.3rem + 0.6vw);
+	}
+}
+
 @media all and (max-width: 1180px) {
 	.picture {
 		flex : 2;
@@ -288,7 +309,7 @@ input[type="submit"] {
 		margin-top: 0;
 		margin-bottom: 1em;
 	}
-	#about-me h6, #about-me p {
+	#about-me p {
 		width: 100%;
 	}
 }
